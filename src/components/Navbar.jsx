@@ -1,6 +1,8 @@
 import todoicon from "../assets/todo-icon.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+    const navigate = useNavigate(null)
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-evenly">
             <div class="container-fluid">
@@ -8,7 +10,7 @@ const Navbar = () => {
                     <img src={todoicon} width="30" height="30" class="d-inline-block align-text-top" />
                     Rashad's Todo App
                 </a>
-                <button className="btn btn-outline-success">Sign In</button>
+                <button onClick={() => navigate('/login')} className="btn btn-outline-success">Sign In</button>
             </div>
 
         </nav>

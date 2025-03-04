@@ -3,9 +3,8 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
     return ( 
-        <div className="container-fluid m-0">
-               <Navbar></Navbar>
-               <HeroSection/>
+        <div className="container-fluid w-100 m-0 vh-100">
+               <HeroSection isVisible={true}/>
         </div>
      );
 }
